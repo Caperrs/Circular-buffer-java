@@ -1,0 +1,22 @@
+# Circular Buffer – Readers and Writers (Java)
+
+This project implements a circular buffer in Java that solves the readers and writers
+(producer-consumer) concurrency problem using classic monitor synchronization
+with `synchronized`, `wait()`, and `notifyAll()`.
+
+## Files
+- `MyCircularBuffer.java`: Implements a thread-safe circular buffer.
+- `MyCircularBufferTest.java`: Tests the buffer using multiple reader and writer threads.
+
+## Compilation and Execution
+Compile the program using:
+
+Run the program using:
+
+## Description
+The circular buffer blocks writers when the buffer is full and blocks readers when
+the buffer is empty. Threads are synchronized using Java monitors, ensuring mutual
+exclusion and correct coordination between concurrent threads.
+
+This implementation follows the concepts discussed in the module on concurrent
+programs and the Java multithreading circular buffer example.
